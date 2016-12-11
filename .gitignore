@@ -1,2 +1,7 @@
 big-data-desafio.pdf
 .vagrant/
+spark-2.0.2-bin-hadoop2.7/
+docs/
+data/
+notebook/metastore_db/
+
