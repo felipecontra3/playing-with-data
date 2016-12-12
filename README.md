@@ -10,19 +10,19 @@ To use it, do as described below:
 
 1. First of all, clone this directory.
 
-2. If you already have the data on your computer (products.psv and interactions.psv - uncompacted), to save time, put the files at the data/ directory and comment these line in the provision.sh:
+2. If you already have the data on your computer (products.psv and interactions.psv - uncompacted), to save time, put the files at the `playing-with-data/data/` directory and comment these lines (using #) in the provision.sh:
 
 	```
-	#echo '----------------------------------------------'
-	#echo ' GETTING DATA'
-	#echo '----------------------------------------------'
-	#cd /vagrant/data
-	#wget https://s3.amazonaws.com/big-data-files/desafios/interactions.psv.gz
-	#wget https://s3.amazonaws.com/big-data-files/desafios/products.psv.gz
-	#gunzip interactions.psv.gz
-	#gunzip products.psv.gz
-	#rm interactions.psv.gz
-	#rm products.psv.gz
+	echo '----------------------------------------------'
+	echo ' GETTING DATA'
+	echo '----------------------------------------------'
+	cd /vagrant/data
+	wget https://s3.amazonaws.com/big-data-files/desafios/interactions.psv.gz
+	wget https://s3.amazonaws.com/big-data-files/desafios/products.psv.gz
+	gunzip interactions.psv.gz
+	gunzip products.psv.gz
+	rm interactions.psv.gz
+	rm products.psv.gz
 	```
 
 3. Go to the playing-with-data directory and run `vagrant up` and wait. This will create a virtual machine with iPython running on it.
