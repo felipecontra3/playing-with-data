@@ -25,7 +25,7 @@ To use it, do as described below:
 	rm products.psv.gz
 	```
 
-3. Go to the playing-with-data directory and run `vagrant up` and wait. This will create a virtual machine with iPython running on it.
+3. Go to the `playing-with-data` directory and run `vagrant up` and wait. This will create a virtual machine with iPython running on it.
 
 4. Access the virtual machine using `vagrant ssh`
 
