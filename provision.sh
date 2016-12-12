@@ -38,7 +38,6 @@ sudo python jupiter_passwd.py
 sudo pip install py4j
 
 #creating swap
-
 sudo fallocate -l 8G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
@@ -56,7 +55,7 @@ sudo swapon /swapfile
 #rm products.psv.gz
 
 
-sudo python notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0
+python notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0
 
 
 
