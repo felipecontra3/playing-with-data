@@ -1,0 +1,1 @@
+If you have the data, put it in this directory. The files are interactios.psv and products.psv. You should uncompact it befere put in here

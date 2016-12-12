@@ -2,6 +2,8 @@ big-data-desafio.pdf
 .vagrant/
 spark-2.0.2-bin-hadoop2.7/
 docs/
-data/
+data/interactions.psv
+data/interactions_for_dev.psv
+data/products.psv
 notebook/metastore_db/
-
+notebook/.ipynb_checkpoints/
