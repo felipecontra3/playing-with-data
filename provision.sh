@@ -2,8 +2,13 @@
 
 echo 'export LC_ALL="en_US.UTF-8"' >> /home/vagrant/.bashrc
  
-#sudo add-apt-repository ppa:webupd8team/java -y
+sudo add-apt-repository ppa:webupd8team/java -y
 sudo apt-get update
+echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
+echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
+sudo apt-get -y install oracle-java8-installer
+sudo apt-get -y install oracle-java8-set-default
+
 sudo apt-get -y --force-yes install htop
 
 echo '----------------------------------------------'
@@ -55,7 +60,7 @@ rm interactions.psv.gz
 rm products.psv.gz
 
 
-python notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0
+ipython notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0
 
 
 
