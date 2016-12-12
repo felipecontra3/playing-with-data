@@ -36,10 +36,7 @@ cd /home/vagrant
 sudo mkdir /home/vagrant/.jupyter/
 sudo touch /home/vagrant/.jupyter/jupyter_notebook_config.py
 sudo jupyter notebook --generate-config
-
-cd /vagrant
-sudo python jupiter_passwd.py
-
+ 
 sudo pip install py4j
 
 #creating swap
@@ -58,9 +55,6 @@ gunzip interactions.psv.gz
 gunzip products.psv.gz
 rm interactions.psv.gz
 rm products.psv.gz
-
-
-ipython notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0
 
 
 

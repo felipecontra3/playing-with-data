@@ -27,6 +27,16 @@ To use it, do as described below:
 
 3. Go to the playing-with-data directory and run `vagrant up` and wait. This will create a virtual machine with iPython running on it.
 
-4. Acces the [Jupyter Notebook](http://192.168.33.10:8888) and use the password 123.
+4. Access the virtual machine using `vagrant ssh`
 
-5. Run the notebook Exploratory Analysis
+5. To put online the Jupyter Notebook, run these commands:
+
+	```
+	cd /vagrant
+	sudo python jupiter_passwd.py
+	ipython notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0 &
+	```
+
+6. Access the [Jupyter Notebook](http://192.168.33.10:8888) and use the password 123.
+
+7. Run the notebook Exploratory Analysis
