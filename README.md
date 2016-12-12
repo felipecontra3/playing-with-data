@@ -27,6 +27,6 @@ To use it, do as described below:
 
 3. Go to the playing-with-data directory and run `vagrant up` and wait. This will create a virtual machine with iPython running on it.
 
-4. Access the [Jupyter Notebook](http://192.168.33.10:8888) and use the password 123.
+4. Acces the [Jupyter Notebook](http://192.168.33.10:8888) and use the password 123.
 
-5. 
+5. Run the notebook Exploratory Analysis
