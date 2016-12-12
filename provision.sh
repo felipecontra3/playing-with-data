@@ -43,16 +43,16 @@ sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 
-#echo '----------------------------------------------'
-#echo ' GETTING DATA'
-#echo '----------------------------------------------'
-#cd /vagrant/data
-#wget https://s3.amazonaws.com/big-data-files/desafios/interactions.psv.gz
-#wget https://s3.amazonaws.com/big-data-files/desafios/products.psv.gz
-#gunzip interactions.psv.gz
-#gunzip products.psv.gz
-#rm interactions.psv.gz
-#rm products.psv.gz
+echo '----------------------------------------------'
+echo ' GETTING DATA'
+echo '----------------------------------------------'
+cd /vagrant/data
+wget https://s3.amazonaws.com/big-data-files/desafios/interactions.psv.gz
+wget https://s3.amazonaws.com/big-data-files/desafios/products.psv.gz
+gunzip interactions.psv.gz
+gunzip products.psv.gz
+rm interactions.psv.gz
+rm products.psv.gz
 
 
 python notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0
