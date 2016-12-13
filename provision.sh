@@ -25,8 +25,9 @@ sudo apt-get -y --force-yes install \
 python-pip \
 python-numpy \
 python-dev \
-python-zmq
-
+python-zmq \
+pkg-config \
+python-matplotlib
 
 sudo pip install --upgrade ipython[all]
 sudo pip install functools32
@@ -55,10 +56,3 @@ gunzip interactions.psv.gz
 gunzip products.psv.gz
 rm interactions.psv.gz
 rm products.psv.gz
-
-
-
-
-
-
-
